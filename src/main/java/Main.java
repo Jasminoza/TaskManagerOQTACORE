@@ -2,19 +2,24 @@
 public class Main {
 
     /**
+     * Необходимо отвести свою ветку от main.
+     * <p>
      * Напишите классы для управления списком задач (TaskManager).
      * <p>
-     * Каждая задача (Task) имеет:
-     * <p>
-     * уникальный идентификатор (int id), описание (String description), статус (enum Status: NEW, IN_PROGRESS, DONE).
-     * <p>
+     *
+     * <br>
      * Требования:
      * <p>
-     * 1) Класс Task с полями, конструктором, геттерами и сеттерами.
+     * 1) Не может быть задач с одинаковыми идентификаторами.
      * <p>
-     * 2) Enum Status с тремя значениями: NEW, IN_PROGRESS, DONE.
+     * 2) Каждая задача (Task) имеет:
+     * <p> уникальный идентификатор (int id), описание (String description), статус (enum Status: NEW, IN_PROGRESS, DONE).
      * <p>
-     * 3) Класс TaskManager с методами:
+     * 3) Класс Task с полями, конструктором со всеми полями, геттерами и сеттерами.
+     * <p>
+     * 4) Enum Status с тремя значениями: NEW, IN_PROGRESS, DONE.
+     * <p>
+     * 5) Класс TaskManager с методами:
      * <p>
      * void addTask(Task task) — добавить задачу.
      * <p>
@@ -24,7 +29,9 @@ public class Main {
      * <p>
      * void updateStatus(int id, Status status) — обновить статус задачи по ID.
      * <p>
-     * Все ошибки в данных должны выбрасывать исключения. Напишите тесты для метода addTask().
+     * 6) Методы должны выбрасывать ошибки в необходимых случаях (но не возвращать null).
+     * <p>
+     * 7) Напишите тесты для метода addTask().
      */
 
     public static void main(String[] args) {
